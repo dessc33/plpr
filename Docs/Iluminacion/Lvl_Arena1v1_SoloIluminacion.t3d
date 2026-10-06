@@ -1,0 +1,221 @@
+Begin Map
+   Begin Level
+      Begin Actor Class=/Script/Engine.DirectionalLight Name=DirectionalLight_2 Archetype="/Script/Engine.DirectionalLight'/Script/Engine.Default__DirectionalLight'" ExportPath="/Script/Engine.DirectionalLight'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.DirectionalLight_2'"
+         Begin Object Class=/Script/Engine.DirectionalLightComponent Name="LightComponent0" Archetype="/Script/Engine.DirectionalLightComponent'/Script/Engine.Default__DirectionalLight:LightComponent0'" ExportPath="/Script/Engine.DirectionalLightComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.DirectionalLight_2.LightComponent0'"
+         End Object
+         Begin Object Class=/Script/Engine.ArrowComponent Name="ArrowComponent0" Archetype="/Script/Engine.ArrowComponent'/Script/Engine.Default__DirectionalLight:ArrowComponent0'" ExportPath="/Script/Engine.ArrowComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.DirectionalLight_2.ArrowComponent0'"
+         End Object
+         Begin Object Name="LightComponent0" ExportPath="/Script/Engine.DirectionalLightComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.DirectionalLight_2.LightComponent0'"
+            Mobility=Movable
+            OriginalLightGuid=644AA8F74BAAC7210FF382AFC4161D95
+            LightGuid=8A347A4017AFD983D4F6413311882138
+            Intensity=9.000000
+            LightColor=(B=232,G=246,R=255,A=255)
+            LightSourceAngle=0.800000
+            LightSourceSoftAngle=0.500000
+            ContactShadowLength=0.040000
+            bAtmosphereSunLight=True
+            RelativeLocation=(X=0.000000,Y=0.000000,Z=6000.000000)
+            RelativeRotation=(Pitch=-48.000000,Yaw=30.000000,Roll=-0.000000)
+         End Object
+         Begin Object Name="ArrowComponent0" ExportPath="/Script/Engine.ArrowComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.DirectionalLight_2.ArrowComponent0'"
+            ArrowColor=(B=232,G=246,R=255,A=255)
+            AttachParent="LightComponent0"
+         End Object
+         ArrowComponent="ArrowComponent0"
+         DirectionalLightComponent="LightComponent0"
+         LightComponent="LightComponent0"
+         RootComponent="LightComponent0"
+         ActorLabel="DirectionalLight"
+         FolderPath="Sky"
+      End Actor
+      Begin Actor Class=/Script/Engine.ExponentialHeightFog Name=ExponentialHeightFog_0 Archetype="/Script/Engine.ExponentialHeightFog'/Script/Engine.Default__ExponentialHeightFog'" ExportPath="/Script/Engine.ExponentialHeightFog'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.ExponentialHeightFog_0'"
+         Begin Object Class=/Script/Engine.BillboardComponent Name="Sprite" Archetype="/Script/Engine.BillboardComponent'/Script/Engine.Default__ExponentialHeightFog:Sprite'" ExportPath="/Script/Engine.BillboardComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.ExponentialHeightFog_0.Sprite'"
+         End Object
+         Begin Object Class=/Script/Engine.ExponentialHeightFogComponent Name="HeightFogComponent0" Archetype="/Script/Engine.ExponentialHeightFogComponent'/Script/Engine.Default__ExponentialHeightFog:HeightFogComponent0'" ExportPath="/Script/Engine.ExponentialHeightFogComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0'"
+         End Object
+         Begin Object Name="Sprite" ExportPath="/Script/Engine.BillboardComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.ExponentialHeightFog_0.Sprite'"
+            AttachParent="HeightFogComponent0"
+         End Object
+         Begin Object Name="HeightFogComponent0" ExportPath="/Script/Engine.ExponentialHeightFogComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0'"
+            FogDensity=0.008000
+            FogHeightFalloff=0.150000
+            FogMaxOpacity=0.600000
+            StartDistance=2500.000000
+            bEnableVolumetricFog=False
+         End Object
+         Component="HeightFogComponent0"
+         SpriteComponent="Sprite"
+         RootComponent="HeightFogComponent0"
+         ActorLabel="ExponentialHeightFog"
+         FolderPath="Sky"
+      End Actor
+      Begin Actor Class=/Script/Engine.SkyAtmosphere Name=SkyAtmosphere_0 Archetype="/Script/Engine.SkyAtmosphere'/Script/Engine.Default__SkyAtmosphere'" ExportPath="/Script/Engine.SkyAtmosphere'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyAtmosphere_0'"
+         Begin Object Class=/Script/Engine.BillboardComponent Name="Sprite" Archetype="/Script/Engine.BillboardComponent'/Script/Engine.Default__SkyAtmosphere:Sprite'" ExportPath="/Script/Engine.BillboardComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyAtmosphere_0.Sprite'"
+         End Object
+         Begin Object Class=/Script/Engine.SkyAtmosphereComponent Name="SkyAtmosphereComponent" Archetype="/Script/Engine.SkyAtmosphereComponent'/Script/Engine.Default__SkyAtmosphere:SkyAtmosphereComponent'" ExportPath="/Script/Engine.SkyAtmosphereComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyAtmosphere_0.SkyAtmosphereComponent'"
+         End Object
+         Begin Object Class=/Script/Engine.ArrowComponent Name="ArrowComponent" Archetype="/Script/Engine.ArrowComponent'/Script/Engine.Default__SkyAtmosphere:ArrowComponent'" ExportPath="/Script/Engine.ArrowComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyAtmosphere_0.ArrowComponent'"
+         End Object
+         Begin Object Name="Sprite" ExportPath="/Script/Engine.BillboardComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyAtmosphere_0.Sprite'"
+            AttachParent="SkyAtmosphereComponent"
+         End Object
+         Begin Object Name="SkyAtmosphereComponent" ExportPath="/Script/Engine.SkyAtmosphereComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyAtmosphere_0.SkyAtmosphereComponent'"
+            bStaticLightingBuiltGUID=7B5C75064F03FE32889D628FBE523B58
+         End Object
+         Begin Object Name="ArrowComponent" ExportPath="/Script/Engine.ArrowComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyAtmosphere_0.ArrowComponent'"
+            AttachParent="SkyAtmosphereComponent"
+         End Object
+         SkyAtmosphereComponent="SkyAtmosphereComponent"
+         ArrowComponent="ArrowComponent"
+         SpriteComponent="Sprite"
+         RootComponent="SkyAtmosphereComponent"
+         ActorLabel="SkyAtmosphere"
+         FolderPath="Sky"
+      End Actor
+      Begin Actor Class=/Script/Engine.SkyLight Name=SkyLight_1 Archetype="/Script/Engine.SkyLight'/Script/Engine.Default__SkyLight'" ExportPath="/Script/Engine.SkyLight'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyLight_1'"
+         Begin Object Class=/Script/Engine.BillboardComponent Name="Sprite" Archetype="/Script/Engine.BillboardComponent'/Script/Engine.Default__SkyLight:Sprite'" ExportPath="/Script/Engine.BillboardComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyLight_1.Sprite'"
+         End Object
+         Begin Object Class=/Script/Engine.SkyLightComponent Name="SkyLightComponent0" Archetype="/Script/Engine.SkyLightComponent'/Script/Engine.Default__SkyLight:SkyLightComponent0'" ExportPath="/Script/Engine.SkyLightComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyLight_1.SkyLightComponent0'"
+         End Object
+         Begin Object Name="Sprite" ExportPath="/Script/Engine.BillboardComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyLight_1.Sprite'"
+         End Object
+         Begin Object Name="SkyLightComponent0" ExportPath="/Script/Engine.SkyLightComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.SkyLight_1.SkyLightComponent0'"
+            Mobility=Movable
+            bRealTimeCapture=True
+            OriginalLightGuid=DFB93D6849996D2BCDCFBBB96D67B0FE
+            LightGuid=BCCF16CDB62648AA45AFFBF1464F733C
+            Intensity=1.000000
+            bLowerHemisphereIsBlack=False
+            LowerHemisphereColor=(R=0.100000,G=0.110000,B=0.130000,A=1.000000)
+            RelativeLocation=(X=0.000000,Y=0.000000,Z=5000.000000)
+         End Object
+         LightComponent="SkyLightComponent0"
+         SpriteComponent="Sprite"
+         RootComponent="SkyLightComponent0"
+         ActorLabel="SkyLight"
+         FolderPath="Sky"
+      End Actor
+      Begin Actor Class=/Script/Engine.VolumetricCloud Name=VolumetricCloud_0 Archetype="/Script/Engine.VolumetricCloud'/Script/Engine.Default__VolumetricCloud'" ExportPath="/Script/Engine.VolumetricCloud'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.VolumetricCloud_0'"
+         Begin Object Class=/Script/Engine.BillboardComponent Name="Sprite" Archetype="/Script/Engine.BillboardComponent'/Script/Engine.Default__VolumetricCloud:Sprite'" ExportPath="/Script/Engine.BillboardComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.VolumetricCloud_0.Sprite'"
+         End Object
+         Begin Object Class=/Script/Engine.VolumetricCloudComponent Name="VolumetricCloudComponent" Archetype="/Script/Engine.VolumetricCloudComponent'/Script/Engine.Default__VolumetricCloud:VolumetricCloudComponent'" ExportPath="/Script/Engine.VolumetricCloudComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.VolumetricCloud_0.VolumetricCloudComponent'"
+         End Object
+         Begin Object Name="Sprite" ExportPath="/Script/Engine.BillboardComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.VolumetricCloud_0.Sprite'"
+            AttachParent="VolumetricCloudComponent"
+         End Object
+         Begin Object Name="VolumetricCloudComponent" ExportPath="/Script/Engine.VolumetricCloudComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.VolumetricCloud_0.VolumetricCloudComponent'"
+            MaterialLifetimePtr="/Script/Engine.MaterialInstanceConstant'/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud_Inst.m_SimpleVolumetricCloud_Inst'"
+         End Object
+         VolumetricCloudComponent="VolumetricCloudComponent"
+         SpriteComponent="Sprite"
+         RootComponent="VolumetricCloudComponent"
+         ActorLabel="VolumetricCloud"
+         FolderPath="Sky"
+      End Actor
+      Begin Actor Class=/Script/Engine.PostProcessVolume Name=PostProcessVolume_2 Archetype="/Script/Engine.PostProcessVolume'/Script/Engine.Default__PostProcessVolume'" ExportPath="/Script/Engine.PostProcessVolume'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.PostProcessVolume_2'"
+         Begin Object Class=/Script/Engine.BrushComponent Name="BrushComponent0" Archetype="/Script/Engine.BrushComponent'/Script/Engine.Default__PostProcessVolume:BrushComponent0'" ExportPath="/Script/Engine.BrushComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.PostProcessVolume_2.BrushComponent0'"
+            Begin Object Class=/Script/Engine.BodySetup Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.PostProcessVolume_2.BrushComponent0.BodySetup_0'"
+            End Object
+         End Object
+         Begin Object Class=/Script/UnrealEd.CubeBuilder Name="CubeBuilder_5" ExportPath="/Script/UnrealEd.CubeBuilder'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.PostProcessVolume_2.CubeBuilder_5'"
+         End Object
+         Begin Brush Name=Model_1
+         End Brush
+         Begin Object Name="BrushComponent0" ExportPath="/Script/Engine.BrushComponent'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.PostProcessVolume_2.BrushComponent0'"
+            Begin Object Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.PostProcessVolume_2.BrushComponent0.BodySetup_0'"
+               AggGeom=(ConvexElems=((VertexData=((X=-100.000000,Y=100.000000,Z=-100.000000),(X=-100.000000,Y=100.000000,Z=100.000000),(X=-100.000000,Y=-100.000000,Z=100.000000),(X=-100.000000,Y=-100.000000,Z=-100.000000),(X=100.000000,Y=100.000000,Z=-100.000000),(X=100.000000,Y=100.000000,Z=100.000000),(X=100.000000,Y=-100.000000,Z=-100.000000),(X=100.000000,Y=-100.000000,Z=100.000000)),IndexData=(5,4,1,0,2,1,0,1,4,3,0,4,7,5,2,5,1,2,7,4,5,6,3,4,3,2,0,3,7,2,6,7,3,6,4,7),ElemBox=(Min=(X=-100.000000,Y=-100.000000,Z=-100.000000),Max=(X=100.000000,Y=100.000000,Z=100.000000),IsValid=True))))
+               bGenerateMirroredCollision=False
+               CollisionTraceFlag=CTF_UseSimpleAsComplex
+            End Object
+            Brush="/Script/Engine.Model'Model_1'"
+            BrushBodySetup="/Script/Engine.BodySetup'BodySetup_0'"
+            BodyInstance=(MaxAngularVelocity=3599.999756)
+         End Object
+         Begin Object Name="CubeBuilder_5" ExportPath="/Script/UnrealEd.CubeBuilder'/Game/Maps/Lvl_Arena1v1.Lvl_Arena1v1:PersistentLevel.PostProcessVolume_2.CubeBuilder_5'"
+         End Object
+         Settings=(bOverride_ColorSaturation=True,bOverride_ColorContrast=True,bOverride_FilmSlope=True,bOverride_FilmToe=True,bOverride_FilmShoulder=True,bOverride_SceneFringeIntensity=True,bOverride_BloomIntensity=True,bOverride_BloomThreshold=True,bOverride_AutoExposureMethod=True,bOverride_AutoExposureBias=True,bOverride_AutoExposureMinBrightness=True,bOverride_AutoExposureMaxBrightness=True,bOverride_AutoExposureSpeedUp=True,bOverride_AutoExposureSpeedDown=True,bOverride_LocalExposureHighlightContrastScale=True,bOverride_LocalExposureShadowContrastScale=True,bOverride_MotionBlurAmount=True,bOverride_LensFlareIntensity=True,bOverride_VignetteIntensity=True,bOverride_FilmGrainIntensity=True,bOverride_AmbientOcclusionIntensity=True,bOverride_AmbientOcclusionRadius=True,AutoExposureMethod=AEM_Histogram,AutoExposureBias=0.400000,AutoExposureMinBrightness=1.000000,AutoExposureMaxBrightness=10.000000,AutoExposureSpeedUp=4.000000,AutoExposureSpeedDown=2.000000,LocalExposureHighlightContrastScale=1.000000,LocalExposureShadowContrastScale=1.000000,FilmSlope=0.900000,FilmToe=0.600000,FilmShoulder=0.260000,ColorSaturation=(X=1.150000,Y=1.150000,Z=1.150000,W=1.000000),ColorContrast=(X=1.080000,Y=1.080000,Z=1.080000,W=1.000000),BloomIntensity=0.300000,BloomThreshold=1.000000,SceneFringeIntensity=0.000000,MotionBlurAmount=0.000000,LensFlareIntensity=0.000000,VignetteIntensity=0.150000,FilmGrainIntensity=0.000000,AmbientOcclusionIntensity=0.600000,AmbientOcclusionRadius=100.000000)
+         Priority=10.000000
+         bUnbound=True
+         BrushType=Brush_Add
+         Begin Brush Name=Model_1
+            Begin PolyList
+               Begin Polygon
+                  Origin   -00100.000000,-00100.000000,-00100.000000
+                  Normal   -00001.000000,+00000.000000,+00000.000000
+                  TextureU +00000.000000,+00001.000000,+00000.000000
+                  TextureV +00000.000000,+00000.000000,-00001.000000
+                  Vertex   -00100.000000,-00100.000000,-00100.000000
+                  Vertex   -00100.000000,-00100.000000,+00100.000000
+                  Vertex   -00100.000000,+00100.000000,+00100.000000
+                  Vertex   -00100.000000,+00100.000000,-00100.000000
+               End Polygon
+               Begin Polygon
+                  Origin   -00100.000000,+00100.000000,-00100.000000
+                  Normal   +00000.000000,+00001.000000,+00000.000000
+                  TextureU +00001.000000,-00000.000000,+00000.000000
+                  TextureV +00000.000000,+00000.000000,-00001.000000
+                  Vertex   -00100.000000,+00100.000000,-00100.000000
+                  Vertex   -00100.000000,+00100.000000,+00100.000000
+                  Vertex   +00100.000000,+00100.000000,+00100.000000
+                  Vertex   +00100.000000,+00100.000000,-00100.000000
+               End Polygon
+               Begin Polygon
+                  Origin   +00100.000000,+00100.000000,-00100.000000
+                  Normal   +00001.000000,+00000.000000,+00000.000000
+                  TextureU +00000.000000,-00001.000000,+00000.000000
+                  TextureV +00000.000000,+00000.000000,-00001.000000
+                  Vertex   +00100.000000,+00100.000000,-00100.000000
+                  Vertex   +00100.000000,+00100.000000,+00100.000000
+                  Vertex   +00100.000000,-00100.000000,+00100.000000
+                  Vertex   +00100.000000,-00100.000000,-00100.000000
+               End Polygon
+               Begin Polygon
+                  Origin   +00100.000000,-00100.000000,-00100.000000
+                  Normal   +00000.000000,-00001.000000,+00000.000000
+                  TextureU -00001.000000,-00000.000000,-00000.000000
+                  TextureV +00000.000000,+00000.000000,-00001.000000
+                  Vertex   +00100.000000,-00100.000000,-00100.000000
+                  Vertex   +00100.000000,-00100.000000,+00100.000000
+                  Vertex   -00100.000000,-00100.000000,+00100.000000
+                  Vertex   -00100.000000,-00100.000000,-00100.000000
+               End Polygon
+               Begin Polygon
+                  Origin   -00100.000000,+00100.000000,+00100.000000
+                  Normal   +00000.000000,+00000.000000,+00001.000000
+                  TextureU +00001.000000,+00000.000000,+00000.000000
+                  TextureV +00000.000000,+00001.000000,+00000.000000
+                  Vertex   -00100.000000,+00100.000000,+00100.000000
+                  Vertex   -00100.000000,-00100.000000,+00100.000000
+                  Vertex   +00100.000000,-00100.000000,+00100.000000
+                  Vertex   +00100.000000,+00100.000000,+00100.000000
+               End Polygon
+               Begin Polygon
+                  Origin   -00100.000000,-00100.000000,-00100.000000
+                  Normal   +00000.000000,+00000.000000,-00001.000000
+                  TextureU +00001.000000,+00000.000000,+00000.000000
+                  TextureV +00000.000000,-00001.000000,+00000.000000
+                  Vertex   -00100.000000,-00100.000000,-00100.000000
+                  Vertex   -00100.000000,+00100.000000,-00100.000000
+                  Vertex   +00100.000000,+00100.000000,-00100.000000
+                  Vertex   +00100.000000,-00100.000000,-00100.000000
+               End Polygon
+            End PolyList
+         End Brush
+         Brush="/Script/Engine.Model'Model_1'"
+         BrushComponent="BrushComponent0"
+         BrushBuilder="/Script/UnrealEd.CubeBuilder'CubeBuilder_5'"
+         bHidden=False
+         RootComponent="BrushComponent0"
+         Tags(0)="ArenaLook"
+         ActorLabel="ArenaLook"
+         FolderPath="Sky"
+         bIsSpatiallyLoaded=False
+      End Actor
+   End Level
+Begin Surface
+End Surface
+End Map
+Begin FolderList
+	Folder=Sky
+End FolderList

@@ -1,0 +1,182 @@
+Begin Map
+   Begin Level
+      Begin Actor Class=/Script/Engine.ExponentialHeightFog Name=ExponentialHeightFog_0 Archetype="/Script/Engine.ExponentialHeightFog'/Script/Engine.Default__ExponentialHeightFog'" ExportPath="/Script/Engine.ExponentialHeightFog'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.ExponentialHeightFog_0'"
+         Begin Object Class=/Script/Engine.BillboardComponent Name="Sprite" Archetype="/Script/Engine.BillboardComponent'/Script/Engine.Default__ExponentialHeightFog:Sprite'" ExportPath="/Script/Engine.BillboardComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.ExponentialHeightFog_0.Sprite'"
+         End Object
+         Begin Object Class=/Script/Engine.ExponentialHeightFogComponent Name="HeightFogComponent0" Archetype="/Script/Engine.ExponentialHeightFogComponent'/Script/Engine.Default__ExponentialHeightFog:HeightFogComponent0'" ExportPath="/Script/Engine.ExponentialHeightFogComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0'"
+         End Object
+         Begin Object Name="Sprite" ExportPath="/Script/Engine.BillboardComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.ExponentialHeightFog_0.Sprite'"
+            AttachParent="HeightFogComponent0"
+         End Object
+         Begin Object Name="HeightFogComponent0" ExportPath="/Script/Engine.ExponentialHeightFogComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0'"
+            FogDensity=0.006000
+            FogHeightFalloff=0.200000
+            FogInscatteringLuminance=(R=0.050000,G=0.070000,B=0.160000,A=1.000000)
+            FogMaxOpacity=0.450000
+            StartDistance=850.000000
+            bEnableVolumetricFog=False
+         End Object
+         Component="HeightFogComponent0"
+         SpriteComponent="Sprite"
+         RootComponent="HeightFogComponent0"
+         ActorLabel="Halloween_Atmospheric_Fog"
+         FolderPath="Lobby/Lighting"
+      End Actor
+      Begin Actor Class=/Script/Engine.SkyLight Name=SkyLight_0 Archetype="/Script/Engine.SkyLight'/Script/Engine.Default__SkyLight'" ExportPath="/Script/Engine.SkyLight'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.SkyLight_0'"
+         Begin Object Class=/Script/Engine.BillboardComponent Name="Sprite" Archetype="/Script/Engine.BillboardComponent'/Script/Engine.Default__SkyLight:Sprite'" ExportPath="/Script/Engine.BillboardComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.SkyLight_0.Sprite'"
+         End Object
+         Begin Object Class=/Script/Engine.SkyLightComponent Name="SkyLightComponent0" Archetype="/Script/Engine.SkyLightComponent'/Script/Engine.Default__SkyLight:SkyLightComponent0'" ExportPath="/Script/Engine.SkyLightComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.SkyLight_0.SkyLightComponent0'"
+         End Object
+         Begin Object Name="Sprite" ExportPath="/Script/Engine.BillboardComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.SkyLight_0.Sprite'"
+         End Object
+         Begin Object Name="SkyLightComponent0" ExportPath="/Script/Engine.SkyLightComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.SkyLight_0.SkyLightComponent0'"
+            Mobility=Movable
+            OriginalLightGuid=AFD014824919A139580D138637BD8161
+            LightGuid=BC206848E38D1499DCA4DB3F0F233231
+            Intensity=0.500000
+            LightColor=(B=205,G=232,R=255,A=255)
+            bLowerHemisphereIsBlack=False
+            LowerHemisphereColor=(R=0.080000,G=0.090000,B=0.120000,A=1.000000)
+            RelativeLocation=(X=0.000000,Y=0.000000,Z=500.000000)
+         End Object
+         LightComponent="SkyLightComponent0"
+         SpriteComponent="Sprite"
+         RootComponent="SkyLightComponent0"
+         ActorLabel="SkyLight"
+         FolderPath="Lobby/Lighting"
+      End Actor
+      Begin Actor Class=/Script/Engine.DirectionalLight Name=DirectionalLight_0 Archetype="/Script/Engine.DirectionalLight'/Script/Engine.Default__DirectionalLight'" ExportPath="/Script/Engine.DirectionalLight'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.DirectionalLight_0'"
+         Begin Object Class=/Script/Engine.DirectionalLightComponent Name="LightComponent0" Archetype="/Script/Engine.DirectionalLightComponent'/Script/Engine.Default__DirectionalLight:LightComponent0'" ExportPath="/Script/Engine.DirectionalLightComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.DirectionalLight_0.LightComponent0'"
+         End Object
+         Begin Object Class=/Script/Engine.ArrowComponent Name="ArrowComponent0" Archetype="/Script/Engine.ArrowComponent'/Script/Engine.Default__DirectionalLight:ArrowComponent0'" ExportPath="/Script/Engine.ArrowComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.DirectionalLight_0.ArrowComponent0'"
+         End Object
+         Begin Object Name="LightComponent0" ExportPath="/Script/Engine.DirectionalLightComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.DirectionalLight_0.LightComponent0'"
+            Mobility=Movable
+            OriginalLightGuid=DBBBCD7D45BC4026231EAC9554B9E297
+            LightGuid=D440BF098674892CAB5284E9978ACC2C
+            Intensity=1.500000
+            LightColor=(B=238,G=247,R=255,A=255)
+            LightSourceAngle=2.000000
+            LightSourceSoftAngle=1.000000
+            bAtmosphereSunLight=False
+            RelativeLocation=(X=0.000000,Y=0.000000,Z=800.000000)
+            RelativeRotation=(Pitch=-35.000000,Yaw=200.000000,Roll=0.000000)
+         End Object
+         Begin Object Name="ArrowComponent0" ExportPath="/Script/Engine.ArrowComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.DirectionalLight_0.ArrowComponent0'"
+            ArrowColor=(B=238,G=247,R=255,A=255)
+            AttachParent="LightComponent0"
+         End Object
+         ArrowComponent="ArrowComponent0"
+         DirectionalLightComponent="LightComponent0"
+         LightComponent="LightComponent0"
+         RootComponent="LightComponent0"
+         ActorLabel="DirectionalLight"
+         FolderPath="Lobby/Lighting"
+      End Actor
+      Begin Actor Class=/Script/Engine.PostProcessVolume Name=PostProcessVolume_0 Archetype="/Script/Engine.PostProcessVolume'/Script/Engine.Default__PostProcessVolume'" ExportPath="/Script/Engine.PostProcessVolume'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.PostProcessVolume_0'"
+         Begin Object Class=/Script/Engine.BrushComponent Name="BrushComponent0" Archetype="/Script/Engine.BrushComponent'/Script/Engine.Default__PostProcessVolume:BrushComponent0'" ExportPath="/Script/Engine.BrushComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.PostProcessVolume_0.BrushComponent0'"
+            Begin Object Class=/Script/Engine.BodySetup Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.PostProcessVolume_0.BrushComponent0.BodySetup_0'"
+            End Object
+         End Object
+         Begin Object Class=/Script/UnrealEd.CubeBuilder Name="CubeBuilder_7" ExportPath="/Script/UnrealEd.CubeBuilder'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.PostProcessVolume_0.CubeBuilder_7'"
+         End Object
+         Begin Brush Name=Model_1
+         End Brush
+         Begin Object Name="BrushComponent0" ExportPath="/Script/Engine.BrushComponent'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.PostProcessVolume_0.BrushComponent0'"
+            Begin Object Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.PostProcessVolume_0.BrushComponent0.BodySetup_0'"
+               AggGeom=(ConvexElems=((VertexData=((X=-100.000000,Y=100.000000,Z=-100.000000),(X=-100.000000,Y=100.000000,Z=100.000000),(X=-100.000000,Y=-100.000000,Z=100.000000),(X=-100.000000,Y=-100.000000,Z=-100.000000),(X=100.000000,Y=100.000000,Z=-100.000000),(X=100.000000,Y=100.000000,Z=100.000000),(X=100.000000,Y=-100.000000,Z=-100.000000),(X=100.000000,Y=-100.000000,Z=100.000000)),IndexData=(5,4,1,0,2,1,0,1,4,3,0,4,7,5,2,5,1,2,7,4,5,6,3,4,3,2,0,3,7,2,6,7,3,6,4,7),ElemBox=(Min=(X=-100.000000,Y=-100.000000,Z=-100.000000),Max=(X=100.000000,Y=100.000000,Z=100.000000),IsValid=True))))
+               bGenerateMirroredCollision=False
+               CollisionTraceFlag=CTF_UseSimpleAsComplex
+            End Object
+            Brush="/Script/Engine.Model'Model_1'"
+            BrushBodySetup="/Script/Engine.BodySetup'BodySetup_0'"
+            BodyInstance=(MaxAngularVelocity=3599.999756)
+            RelativeLocation=(X=0.000000,Y=0.000000,Z=100.000000)
+         End Object
+         Begin Object Name="CubeBuilder_7" ExportPath="/Script/UnrealEd.CubeBuilder'/Game/Lobby/Lvl_Lobby.Lvl_Lobby:PersistentLevel.PostProcessVolume_0.CubeBuilder_7'"
+         End Object
+         Settings=(bOverride_ColorSaturation=True,bOverride_ColorContrast=True,bOverride_FilmSlope=True,bOverride_FilmToe=True,bOverride_FilmShoulder=True,bOverride_SceneFringeIntensity=True,bOverride_BloomIntensity=True,bOverride_BloomThreshold=True,bOverride_AutoExposureMethod=True,bOverride_AutoExposureBias=True,bOverride_AutoExposureMinBrightness=True,bOverride_AutoExposureMaxBrightness=True,bOverride_AutoExposureSpeedUp=True,bOverride_AutoExposureSpeedDown=True,bOverride_LocalExposureHighlightContrastScale=True,bOverride_LocalExposureShadowContrastScale=True,bOverride_MotionBlurAmount=True,bOverride_LensFlareIntensity=True,bOverride_VignetteIntensity=True,bOverride_FilmGrainIntensity=True,bOverride_AmbientOcclusionIntensity=True,bOverride_AmbientOcclusionRadius=True,AutoExposureMethod=AEM_Histogram,AutoExposureBias=-0.300000,AutoExposureMinBrightness=1.000000,AutoExposureMaxBrightness=8.000000,AutoExposureSpeedUp=3.000000,AutoExposureSpeedDown=1.000000,LocalExposureHighlightContrastScale=1.000000,LocalExposureShadowContrastScale=1.000000,FilmSlope=0.900000,FilmToe=0.600000,FilmShoulder=0.260000,ColorSaturation=(X=1.120000,Y=1.120000,Z=1.120000,W=1.000000),ColorContrast=(X=1.100000,Y=1.100000,Z=1.100000,W=1.000000),BloomIntensity=0.250000,BloomThreshold=1.000000,SceneFringeIntensity=0.000000,MotionBlurAmount=0.000000,LensFlareIntensity=0.000000,VignetteIntensity=0.300000,FilmGrainIntensity=0.000000,AmbientOcclusionIntensity=0.700000,AmbientOcclusionRadius=60.000000)
+         Priority=10.000000
+         bUnbound=True
+         BrushType=Brush_Add
+         Begin Brush Name=Model_1
+            Begin PolyList
+               Begin Polygon
+                  Origin   -00100.000000,-00100.000000,-00100.000000
+                  Normal   -00001.000000,+00000.000000,+00000.000000
+                  TextureU +00000.000000,+00001.000000,+00000.000000
+                  TextureV +00000.000000,+00000.000000,-00001.000000
+                  Vertex   -00100.000000,-00100.000000,-00100.000000
+                  Vertex   -00100.000000,-00100.000000,+00100.000000
+                  Vertex   -00100.000000,+00100.000000,+00100.000000
+                  Vertex   -00100.000000,+00100.000000,-00100.000000
+               End Polygon
+               Begin Polygon
+                  Origin   -00100.000000,+00100.000000,-00100.000000
+                  Normal   +00000.000000,+00001.000000,+00000.000000
+                  TextureU +00001.000000,-00000.000000,+00000.000000
+                  TextureV +00000.000000,+00000.000000,-00001.000000
+                  Vertex   -00100.000000,+00100.000000,-00100.000000
+                  Vertex   -00100.000000,+00100.000000,+00100.000000
+                  Vertex   +00100.000000,+00100.000000,+00100.000000
+                  Vertex   +00100.000000,+00100.000000,-00100.000000
+               End Polygon
+               Begin Polygon
+                  Origin   +00100.000000,+00100.000000,-00100.000000
+                  Normal   +00001.000000,+00000.000000,+00000.000000
+                  TextureU +00000.000000,-00001.000000,+00000.000000
+                  TextureV +00000.000000,+00000.000000,-00001.000000
+                  Vertex   +00100.000000,+00100.000000,-00100.000000
+                  Vertex   +00100.000000,+00100.000000,+00100.000000
+                  Vertex   +00100.000000,-00100.000000,+00100.000000
+                  Vertex   +00100.000000,-00100.000000,-00100.000000
+               End Polygon
+               Begin Polygon
+                  Origin   +00100.000000,-00100.000000,-00100.000000
+                  Normal   +00000.000000,-00001.000000,+00000.000000
+                  TextureU -00001.000000,-00000.000000,-00000.000000
+                  TextureV +00000.000000,+00000.000000,-00001.000000
+                  Vertex   +00100.000000,-00100.000000,-00100.000000
+                  Vertex   +00100.000000,-00100.000000,+00100.000000
+                  Vertex   -00100.000000,-00100.000000,+00100.000000
+                  Vertex   -00100.000000,-00100.000000,-00100.000000
+               End Polygon
+               Begin Polygon
+                  Origin   -00100.000000,+00100.000000,+00100.000000
+                  Normal   +00000.000000,+00000.000000,+00001.000000
+                  TextureU +00001.000000,+00000.000000,+00000.000000
+                  TextureV +00000.000000,+00001.000000,+00000.000000
+                  Vertex   -00100.000000,+00100.000000,+00100.000000
+                  Vertex   -00100.000000,-00100.000000,+00100.000000
+                  Vertex   +00100.000000,-00100.000000,+00100.000000
+                  Vertex   +00100.000000,+00100.000000,+00100.000000
+               End Polygon
+               Begin Polygon
+                  Origin   -00100.000000,-00100.000000,-00100.000000
+                  Normal   +00000.000000,+00000.000000,-00001.000000
+                  TextureU +00001.000000,+00000.000000,+00000.000000
+                  TextureV +00000.000000,-00001.000000,+00000.000000
+                  Vertex   -00100.000000,-00100.000000,-00100.000000
+                  Vertex   -00100.000000,+00100.000000,-00100.000000
+                  Vertex   +00100.000000,+00100.000000,-00100.000000
+                  Vertex   +00100.000000,-00100.000000,-00100.000000
+               End Polygon
+            End PolyList
+         End Brush
+         Brush="/Script/Engine.Model'Model_1'"
+         BrushComponent="BrushComponent0"
+         BrushBuilder="/Script/UnrealEd.CubeBuilder'CubeBuilder_7'"
+         bHidden=False
+         RootComponent="BrushComponent0"
+         Tags(0)="ArenaLook"
+         ActorLabel="ArenaLook"
+         FolderPath="Lobby/Lighting"
+         bIsSpatiallyLoaded=False
+      End Actor
+   End Level
+Begin Surface
+End Surface
+End Map
+Begin FolderList
+	Folder=Lobby/Lighting
+End FolderList
